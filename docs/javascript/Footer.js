@@ -2,7 +2,7 @@ const footer = document.getElementById('footer')
 footer.innerHTML = `
 <footer class="relative bg-[#020e28] overflow-hidden">
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1700474568247-2bf81611b293?q=80&w=1267&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full h-full object-cover opacity-15" alt="">
+        <img src="https://images.unsplash.com/photo-1700474568247-2bf81611b293?q=80&w=1267&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full  h-full object-cover opacity-15" alt="">
     </div>
 
     <div class="absolute -top-40 -left-40 w-[500px] h-[500px] bg-[#8da4ca]/25 rounded-full blur-[140px]"></div>
@@ -13,7 +13,7 @@ footer.innerHTML = `
 
             <div>
                 <a href="index.html" class="flex items-center gap-3">
-                  <img src="/docs/assets/logo.png" class="h-16" alt="Subzero Repair Chicago">
+                  <img src="/docs/assets/logo.png" class="h-16 invert brightness-0" alt="Subzero Repair Chicago">
                 </a>
                 <p class="text-gray-400 leading-relaxed mt-5">
                     Professional Subzero appliance repair services delivered with precision, care,

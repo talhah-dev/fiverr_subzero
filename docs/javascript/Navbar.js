@@ -1,7 +1,7 @@
 const navbar = document.getElementById("navbar");
 
 navbar.innerHTML = `
-<nav class="sticky top-0 z-50 w-full backdrop-blur-xl">
+<nav class="sticky top-0 z-50 w-full bg-white backdrop-blur-xl">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-22  items-center justify-between">
       <a href="index.html" class="flex items-center gap-3">
@@ -105,7 +105,7 @@ navbar.innerHTML = `
         <a href="contact.html" class=" font-semibold text-[#020e28] hover:text-[#8da4ca] transition">Contact</a>
       </div>
 
-      <div class="hidden lg:flex items-center gap-3">
+      <div class="hidden  lg:flex items-center gap-3">
         <a
           href="contact.html"
           class="inline-flex items-center gap-2 rounded-xl bg-[#020e28] px-4 py-2.5  font-semibold text-white hover:bg-[#020e28]/90 transition"
@@ -126,8 +126,8 @@ navbar.innerHTML = `
     </div>
   </div>
 
-  <div id="mobileOverlay" class="fixed inset-0 z-50 hidden">
-    <div id="mobileBackdrop" class="absolute inset-0 bg-black/40"></div>
+  <div id="mobileOverlay" class="fixed bg-white  inset-0 z-50 hidden">
+    <div id="mobileBackdrop" class="absolute inset-0 bg-white"></div>
 
     <aside
       id="mobileDrawer"
