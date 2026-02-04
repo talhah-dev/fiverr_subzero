@@ -1,22 +1,22 @@
 const navbar = document.getElementById("navbar");
 
 navbar.innerHTML = `
-<nav class="sticky top-0 z-50 w-full bg-white backdrop-blur-xl">
+<nav class="sticky top-0 z-50 w-full bg-white">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="flex h-22  items-center justify-between">
+    <div class="flex h-22 items-center justify-between">
       <a href="index.html" class="flex items-center gap-3">
         <img src="/docs/assets/logo.png" class="h-12" alt="Subzero Repair Chicago">
       </a>
 
       <div class="hidden lg:flex items-center gap-8">
-        <a href="index.html" class=" font-semibold text-[#020e28] hover:text-[#8da4ca] transition">Home</a>
-        <a href="about.html" class=" font-semibold text-[#020e28] hover:text-[#8da4ca] transition">About</a>
+        <a href="index.html" class="font-semibold text-[#020e28] hover:text-[#8da4ca] transition">Home</a>
+        <a href="about.html" class="font-semibold text-[#020e28] hover:text-[#8da4ca] transition">About</a>
 
         <div class="relative">
           <button
             type="button"
             id="servicesTrigger"
-            class="inline-flex items-center gap-2  font-semibold text-[#020e28] hover:text-[#8da4ca] transition"
+            class="inline-flex items-center gap-2 font-semibold text-[#020e28] hover:text-[#8da4ca] transition"
             aria-expanded="false"
           >
             Services
@@ -36,7 +36,7 @@ navbar.innerHTML = `
                       <i class="fa-solid fa-temperature-low"></i>
                     </span>
                     <div>
-                      <p class=" font-semibold text-[#020e28]">Refrigerator Repair</p>
+                      <p class="font-semibold text-[#020e28]">Refrigerator Repair</p>
                       <p class="text-xs text-slate-500">Cooling, leaks, airflow issues</p>
                     </div>
                   </div>
@@ -48,7 +48,7 @@ navbar.innerHTML = `
                       <i class="fa-solid fa-snowflake"></i>
                     </span>
                     <div>
-                      <p class=" font-semibold text-[#020e28]">Freezer Repair</p>
+                      <p class="font-semibold text-[#020e28]">Freezer Repair</p>
                       <p class="text-xs text-slate-500">Frost, temperature swings</p>
                     </div>
                   </div>
@@ -60,7 +60,7 @@ navbar.innerHTML = `
                       <i class="fa-solid fa-cubes"></i>
                     </span>
                     <div>
-                      <p class=" font-semibold text-[#020e28]">Ice Maker Repair</p>
+                      <p class="font-semibold text-[#020e28]">Ice Maker Repair</p>
                       <p class="text-xs text-slate-500">Clogs, valves, sensors</p>
                     </div>
                   </div>
@@ -72,7 +72,7 @@ navbar.innerHTML = `
                       <i class="fa-solid fa-wine-glass"></i>
                     </span>
                     <div>
-                      <p class=" font-semibold text-[#020e28]">Wine Cooler Repair</p>
+                      <p class="font-semibold text-[#020e28]">Wine Cooler Repair</p>
                       <p class="text-xs text-slate-500">Precise temperature control</p>
                     </div>
                   </div>
@@ -84,7 +84,7 @@ navbar.innerHTML = `
                       <i class="fa-solid fa-bolt"></i>
                     </span>
                     <div>
-                      <p class=" font-semibold text-[#020e28]">Emergency Repair</p>
+                      <p class="font-semibold text-[#020e28]">Emergency Repair</p>
                       <p class="text-xs text-slate-500">24/7 priority response</p>
                     </div>
                   </div>
@@ -93,7 +93,7 @@ navbar.innerHTML = `
 
               <div class="mt-3 pt-3 border-t border-slate-200">
                 <a href="contact.html" class="flex items-center justify-between rounded-2xl px-4 py-3 hover:bg-slate-50 transition">
-                  <span class=" font-semibold text-[#020e28]">Need help today?</span>
+                  <span class="font-semibold text-[#020e28]">Need help today?</span>
                   <span class="text-xs text-slate-500">Book same-day</span>
                 </a>
               </div>
@@ -101,14 +101,14 @@ navbar.innerHTML = `
           </div>
         </div>
 
-        <a href="faq.html" class=" font-semibold text-[#020e28] hover:text-[#8da4ca] transition">FAQ</a>
-        <a href="contact.html" class=" font-semibold text-[#020e28] hover:text-[#8da4ca] transition">Contact</a>
+        <a href="faq.html" class="font-semibold text-[#020e28] hover:text-[#8da4ca] transition">FAQ</a>
+        <a href="contact.html" class="font-semibold text-[#020e28] hover:text-[#8da4ca] transition">Contact</a>
       </div>
 
-      <div class="hidden  lg:flex items-center gap-3">
+      <div class="hidden lg:flex items-center gap-3">
         <a
           href="contact.html"
-          class="inline-flex items-center gap-2 rounded-xl bg-[#020e28] px-4 py-2.5  font-semibold text-white hover:bg-[#020e28]/90 transition"
+          class="inline-flex items-center gap-2 rounded-xl bg-[#020e28] px-4 py-2.5 font-semibold text-white hover:bg-[#020e28]/90 transition"
         >
           <i class="fa-solid fa-calendar-check"></i>
           Book Service
@@ -126,12 +126,10 @@ navbar.innerHTML = `
     </div>
   </div>
 
-  <div id="mobileOverlay" class="fixed bg-white  inset-0 z-50 hidden">
-    <div id="mobileBackdrop" class="absolute inset-0 bg-white"></div>
-
+  <div id="mobileOverlay" class="fixed inset-0 z-50 hidden bg-white">
     <aside
       id="mobileDrawer"
-      class="absolute right-0 top-0 h-full w-[85%] max-w-[360px] translate-x-full bg-white shadow-2xl transition-transform duration-300 ease-out"
+      class="absolute inset-0 w-full h-full translate-x-full bg-white transition-transform duration-300 ease-out"
       aria-label="Mobile menu"
     >
       <div class="flex items-center justify-between border-b border-slate-200 px-5 py-4">
@@ -143,15 +141,15 @@ navbar.innerHTML = `
         </button>
       </div>
 
-      <div class="px-5 py-5 grid gap-2">
-        <a href="index.html" class="rounded-2xl px-4 py-3  font-semibold text-[#020e28] hover:bg-slate-50 transition">Home</a>
-        <a href="about.html" class="rounded-2xl px-4 py-3  font-semibold text-[#020e28] hover:bg-slate-50 transition">About</a>
+      <div class="px-5 py-6 grid gap-2">
+        <a href="index.html" class="rounded-2xl px-4 py-3 font-semibold text-[#020e28] hover:bg-slate-50 transition">Home</a>
+        <a href="about.html" class="rounded-2xl px-4 py-3 font-semibold text-[#020e28] hover:bg-slate-50 transition">About</a>
 
         <div class="rounded-2xl border border-slate-200 bg-slate-50 p-2">
           <button
             id="mobileServicesBtn"
             type="button"
-            class="flex w-full items-center justify-between rounded-2xl px-2 py-2  font-semibold text-[#020e28] hover:bg-white transition"
+            class="flex w-full items-center justify-between rounded-2xl px-3 py-3 font-semibold text-[#020e28] hover:bg-white transition"
             aria-expanded="false"
           >
             Services
@@ -162,21 +160,21 @@ navbar.innerHTML = `
 
           <div id="mobileServicesPanel" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
             <div class="grid gap-1 px-2 pb-2 pt-2">
-              <a href="subzero-refrigerator-repair.html" class="rounded-xl px-4 py-2  font-semibold text-[#020e28] hover:bg-white transition">Refrigerator Repair</a>
-              <a href="subzero-freezer-repair.html" class="rounded-xl px-4 py-2  font-semibold text-[#020e28] hover:bg-white transition">Freezer Repair</a>
-              <a href="subzero-ice-maker-repair.html" class="rounded-xl px-4 py-2  font-semibold text-[#020e28] hover:bg-white transition">Ice Maker Repair</a>
-              <a href="subzero-wine-cooler-repair.html" class="rounded-xl px-4 py-2  font-semibold text-[#020e28] hover:bg-white transition">Wine Cooler Repair</a>
-              <a href="subzero-emergency-repair.html" class="rounded-xl px-4 py-2  font-semibold text-[#020e28] hover:bg-white transition">Emergency Repair</a>
+              <a href="subzero-refrigerator-repair.html" class="rounded-xl px-4 py-2 font-semibold text-[#020e28] hover:bg-white transition">Refrigerator Repair</a>
+              <a href="subzero-freezer-repair.html" class="rounded-xl px-4 py-2 font-semibold text-[#020e28] hover:bg-white transition">Freezer Repair</a>
+              <a href="subzero-ice-maker-repair.html" class="rounded-xl px-4 py-2 font-semibold text-[#020e28] hover:bg-white transition">Ice Maker Repair</a>
+              <a href="subzero-wine-cooler-repair.html" class="rounded-xl px-4 py-2 font-semibold text-[#020e28] hover:bg-white transition">Wine Cooler Repair</a>
+              <a href="subzero-emergency-repair.html" class="rounded-xl px-4 py-2 font-semibold text-[#020e28] hover:bg-white transition">Emergency Repair</a>
             </div>
           </div>
         </div>
 
-        <a href="faq.html" class="rounded-2xl px-4 py-3  font-semibold text-[#020e28] hover:bg-slate-50 transition">FAQ</a>
-        <a href="contact.html" class="rounded-2xl px-4 py-3  font-semibold text-[#020e28] hover:bg-slate-50 transition">Contact</a>
+        <a href="faq.html" class="rounded-2xl px-4 py-3 font-semibold text-[#020e28] hover:bg-slate-50 transition">FAQ</a>
+        <a href="contact.html" class="rounded-2xl px-4 py-3 font-semibold text-[#020e28] hover:bg-slate-50 transition">Contact</a>
 
         <a
           href="tel:7732708300"
-          class="mt-4 inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3  font-semibold text-[#020e28] hover:bg-slate-50 transition"
+          class="mt-4 inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3 font-semibold text-[#020e28] hover:bg-slate-50 transition"
         >
           <i class="fa-solid fa-phone text-[#8da4ca]"></i>
           (773) 270-8300
@@ -184,15 +182,11 @@ navbar.innerHTML = `
 
         <a
           href="contact.html"
-          class="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#020e28] px-4 py-3  font-semibold text-white hover:bg-[#020e28]/90 transition"
+          class="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#020e28] px-4 py-3 font-semibold text-white hover:bg-[#020e28]/90 transition"
         >
           <i class="fa-solid fa-calendar-check"></i>
           Book Service
         </a>
-
-        <p class="mt-2 text-xs text-slate-500 leading-relaxed">
-          Same-day and emergency Subzero repair across the Greater Chicago Area.
-        </p>
       </div>
     </aside>
   </div>
@@ -241,7 +235,6 @@ const mobileOpen = document.getElementById('mobileOpen');
 const mobileOverlay = document.getElementById('mobileOverlay');
 const mobileDrawer = document.getElementById('mobileDrawer');
 const mobileClose = document.getElementById('mobileClose');
-const mobileBackdrop = document.getElementById('mobileBackdrop');
 
 const openMobile = () => {
   mobileOverlay.classList.remove('hidden');
@@ -261,7 +254,6 @@ const closeMobile = () => {
 
 mobileOpen?.addEventListener('click', openMobile);
 mobileClose?.addEventListener('click', closeMobile);
-mobileBackdrop?.addEventListener('click', closeMobile);
 
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && mobileOverlay && !mobileOverlay.classList.contains('hidden')) closeMobile();
